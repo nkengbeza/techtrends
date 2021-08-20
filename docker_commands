@@ -1,0 +1,43 @@
+## Docker commands used to build the application 
+docker build -t techtrends .
+
+## Docker commands used to run the application
+docker run -p 7111:3111 -d techtrends
+
+## Docker commands used to get the application logs
+docker logs ac8febb45252
+
+## Logs from the container running the TechTrends application
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+INFO:werkzeug:2021/08/17, 20:12:41,  * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:2021/08/17, 20:14:00, 172.17.0.1 - - [17/Aug/2021 20:14:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:2021/08/17, 20:14:00, 172.17.0.1 - - [17/Aug/2021 20:14:00] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:2021/08/17, 20:14:00, 172.17.0.1 - - [17/Aug/2021 20:14:00] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:2021/08/17, 20:15:06, 172.17.0.1 - - [17/Aug/2021 20:15:06] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:2021/08/17, 20:15:06, 172.17.0.1 - - [17/Aug/2021 20:15:06] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:2021/08/17, 20:15:06, 172.17.0.1 - - [17/Aug/2021 20:15:06] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:app:2021/08/17, 20:15:09, Article "2020 CNCF Annual Report" retrieved!
+INFO:werkzeug:2021/08/17, 20:15:09, 172.17.0.1 - - [17/Aug/2021 20:15:09] "GET /1 HTTP/1.1" 200 -
+INFO:app:2021/08/17, 20:15:13, About us page retrieved!
+INFO:werkzeug:2021/08/17, 20:15:13, 172.17.0.1 - - [17/Aug/2021 20:15:13] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:2021/08/17, 20:15:16, 172.17.0.1 - - [17/Aug/2021 20:15:16] "GET /create HTTP/1.1" 200 -
+INFO:app:2021/08/17, 20:15:37, Article "Sililcon Microprocessor" created!
+INFO:werkzeug:2021/08/17, 20:15:37, 172.17.0.1 - - [17/Aug/2021 20:15:37] "POST /create HTTP/1.1" 302 -
+INFO:werkzeug:2021/08/17, 20:15:37, 172.17.0.1 - - [17/Aug/2021 20:15:37] "GET / HTTP/1.1" 200 -
+INFO:app:2021/08/17, 20:15:43, Article "Sililcon Microprocessor" retrieved!
+INFO:werkzeug:2021/08/17, 20:15:43, 172.17.0.1 - - [17/Aug/2021 20:15:43] "GET /8 HTTP/1.1" 200 -
+INFO:app:2021/08/17, 20:15:47, About us page retrieved!
+INFO:werkzeug:2021/08/17, 20:15:47, 172.17.0.1 - - [17/Aug/2021 20:15:47] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:2021/08/17, 20:15:50, 172.17.0.1 - - [17/Aug/2021 20:15:50] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:2021/08/17, 20:15:51, 172.17.0.1 - - [17/Aug/2021 20:15:51] "GET / HTTP/1.1" 200 -
+INFO:app:2021/08/17, 20:15:53, Article "KubeCon + CloudNativeCon 2021" retrieved!
+INFO:werkzeug:2021/08/17, 20:15:53, 172.17.0.1 - - [17/Aug/2021 20:15:53] "GET /2 HTTP/1.1" 200 -
+INFO:werkzeug:2021/08/17, 20:18:51, 172.17.0.1 - - [17/Aug/2021 20:18:51] "GET / HTTP/1.1" 200 -
+
+
+
+
