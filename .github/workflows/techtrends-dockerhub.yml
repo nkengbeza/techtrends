@@ -31,4 +31,5 @@ jobs:
           file: ./techtrends/Dockerfile
           plattforms: linux/amd64
           push: true
-          tags: desmondndambi/techtrends:latest  
+          #tags: desmondndambi/techtrends:latest
+          tags: nkengbeza/techtrends:latest  
